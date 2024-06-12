@@ -1,0 +1,89 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fetchcustomersstyle.css?ver=1.9">
+    <script>
+        function add(){
+            window.location.href = "addcustomers.php?";
+        }
+    </script> 
+</head>
+<body>
+   <div class="container"> 
+    <table border=2px>
+        <?php while($row = $result->fetch_assoc()){?>
+            <tr>
+                <td>
+                
+                    <?php echo $row['name'] . "<br>";?>
+                </td>
+                <td>
+                   <span style= color:red>Given=</span> <?php echo $row['given'] . "<br>";?>
+                </td>
+                <td>
+                   <span style= color:green> Taken=</span><?php echo $row['taken'] . "<br>";}?>
+                </td>
+            </tr>
+        
+    </table>  
+    <div class="addcustomer">
+        <a href="addcustomers.php? bid=<?php echo $bid ?>"> +Addcustomer</a>
+    </div>
+   </div>
+</body>
+</html>
+        -->
+
+
+
+
+
+
+
+
+        
+<nav>   
+
+<div class="give">
+    You'll Give=
+     <?php echo $you_will_give; ?>
+</div>
+<div class="got">
+    You'll Get=
+     <?php echo $you_will_take; ?>
+
+</div>
+</nav>
+<table border=1px>
+    <?php while($row = $result->fetch_assoc()){?>
+        <tr>
+            <td>
+            
+                <?php echo $row['name'] . "<br>";?>
+            </td>
+            <td>
+               <span style= color:red>Given=</span> <?php echo $row['Given'] . "<br>";?>
+            </td>
+            <td>
+               <span style= color:green> Taken=</span><?php echo $row['Taken'] . "<br>";?>
+            </td>
+            
+            <td>
+            
+                <?php echo $row['datetime'] . "<br>";}?>
+            </td>
+        </tr>
+    
+</table> 
+<form method="POST">
+     <label for="">you got</label>   
+    <input type=" Number" name=got required>
+    <label for="">you give</label>   
+
+    <input type=" Number" name=give required>
+    <button type="submit" name='submit'>submit</button>
+
+</form>

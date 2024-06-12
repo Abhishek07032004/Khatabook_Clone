@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container table{
+
+    width: 100%;
+    
+}
+tr{
+    height: 50px;
+}
+td{
+    align-items: center;
+}
+.container input{
+    margin-top: 10px;
+}
+.addcustomer{
+    height: 40px;
+    width: 50%;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+.addcustomer a{
+    text-decoration: none;
+    color: black;
+    margin-top: 50%;
+}

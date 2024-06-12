@@ -1,0 +1,108 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 230, 241);
+         
+}
+.wrapper{
+    border: 2px solid black;
+    color:white;
+    width:30%;
+    height: 450px;
+    border: none;
+    background-color:white;
+    border-radius: 15px;
+    margin-top: 20vh;
+}
+.wrapper h1{
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+}
+.username{
+    display: flex;
+    margin: 20px;
+}
+.username input{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    margin-top: 40px;
+    background-color: rgb(243, 241, 237);
+    box-sizing: border-box;
+    padding: 10px;
+    
+
+}
+.username i{
+    transform: translateX(70%);
+    transform: translateY(70%);
+    color: black;
+    align-items: center;
+}.username input::placeholder{
+    color: black;
+    font-size: large;
+}
+.password{
+    display: flex;
+    margin: 20px;
+}
+.password input{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    margin-top: 40px;
+    background-color: rgb(243, 241, 237);
+    box-sizing: border-box;
+    padding: 10px;
+}
+.password i{
+    transform: translateX(-200%);
+    transform: :translate(100%);
+    color: black;
+    align-items: center;
+}
+.password input::placeholder{
+    color: black;
+    font-size: large;
+}
+.login-btn{
+    margin: 20px;
+}
+.reset-btn{
+    margin: 20px;
+}
+.login-btn{
+    text-align: center;
+    
+}
+.login-btn button{
+    height: 40px;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    margin-top: 40px;
+    background-color: rgb(85, 85, 255);
+    box-shadow: 0 0 10px blueviolet;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: large;
+}
+.login-btn button:hover{
+    box-shadow: none;
+}
+form hr{
+    height: 4px;
+    background-color:rgb(247, 230, 241);
+    border: none;
+}
